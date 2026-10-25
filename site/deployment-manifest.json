@@ -19,8 +19,8 @@
     },
     {
       "path": "sources.html",
-      "sha256": "012d9539501fcbac0cb49e506596e5e0aba860e56f06727fb147a3c322796f42",
-      "bytes": 5149
+      "sha256": "ed268d7838238ec9c38db4b265802eee910cb7fbfafa8808a914152b50b9528c",
+      "bytes": 5429
     },
     {
       "path": "vendor/anime.min.js",
@@ -49,7 +49,7 @@
     },
     {
       "path": "assets/fonts/spring-sans.woff",
-      "sha256": "ba4dea073848f5f7901e3ab329cc00ebfd3a767b905cae66aaa0479c1b9dd05e",
+      "sha256": "c317407556af31261bc57e92e7b57826ab3adfdcfe9a277c48c555685337a782",
       "bytes": 110880
     },
     {
