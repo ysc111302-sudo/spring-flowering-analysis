@@ -35,7 +35,7 @@ jobs:
           expected = {r['path'] for r in manifest['files']} | {'deployment-manifest.json'}
           actual = {p.relative_to(root).as_posix() for p in root.rglob('*') if p.is_file()}
           assert actual == expected
-          assert manifest['slides'] == 11
+          assert manifest['slides'] == 12
           for record in manifest['files']:
               path = root / record['path']
               assert path.resolve().is_relative_to(root.resolve()) and not path.is_symlink()
