@@ -1,0 +1,72 @@
+{
+  "title": "봄의 순서는 지금도 같을까?",
+  "slides": 11,
+  "files": [
+    {
+      "path": "index.html",
+      "sha256": "6cd42c11df7643f1886f052492cceddc1fe8a61971c1928761f3a756271773a6",
+      "bytes": 103343
+    },
+    {
+      "path": "style.css",
+      "sha256": "68f7c5a1037ff0a94f6f83641ff3aee8329d5a03613d06a87653471af84ced02",
+      "bytes": 19507
+    },
+    {
+      "path": "deck.js",
+      "sha256": "e53d4a5fc9d4ce0f99cc96d5b614d0fc7df3123baf5745b162e54fe853f1b9f6",
+      "bytes": 7296
+    },
+    {
+      "path": "sources.html",
+      "sha256": "012d9539501fcbac0cb49e506596e5e0aba860e56f06727fb147a3c322796f42",
+      "bytes": 5149
+    },
+    {
+      "path": "vendor/anime.min.js",
+      "sha256": "b5ce1be3c3f530f192e0f2571d1942846096d66119cbada34bfdc912c4873f35",
+      "bytes": 17384
+    },
+    {
+      "path": "vendor/LICENSE-anime.txt",
+      "sha256": "d31f69eaf3513f9020dd3461ce1e41c7907cc2f9c27fa78c2d96541234960d9e",
+      "bytes": 1078
+    },
+    {
+      "path": "assets/images/01-cover.webp",
+      "sha256": "fc8627869ea04c28b73fcd850ca558f69613167ea9eceb15b6a764c8afbdbaff",
+      "bytes": 457176
+    },
+    {
+      "path": "assets/images/02-intro.webp",
+      "sha256": "b4846f577cfc5ba141f19ebcbe29c3c58ea665b8d50f399465796d03a9be0dfb",
+      "bytes": 614476
+    },
+    {
+      "path": "assets/images/03-planting-concept.webp",
+      "sha256": "6a455cc150a52b32f71a4b1b1ee25777812f3e3407d2445e1364ff0069d64721",
+      "bytes": 469490
+    },
+    {
+      "path": "assets/fonts/spring-sans.woff",
+      "sha256": "ba4dea073848f5f7901e3ab329cc00ebfd3a767b905cae66aaa0479c1b9dd05e",
+      "bytes": 110880
+    },
+    {
+      "path": "assets/fonts/OFL.txt",
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+      "bytes": 4388
+    },
+    {
+      "path": ".nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "assets": {
+    "font": "Noto Sans KR; SIL OFL 1.1; license included",
+    "animation": "anime.js 3.2.2; MIT; license included",
+    "images": "User-supplied Gemini concept images; public deployment expressly authorized; not observed field photographs"
+  },
+  "data": "Actual analytical values are inline editable SVG/HTML; no runtime data download required; sources.html retained"
+}

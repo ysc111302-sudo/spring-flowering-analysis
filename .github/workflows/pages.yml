@@ -1,0 +1,50 @@
+name: Deploy spring flowering presentation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - site/**
+      - .github/workflows/pages.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: spring-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - name: Check public allowlist and hashes
+        run: |
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          root = Path('site')
+          manifest = json.loads((root / 'deployment-manifest.json').read_text())
+          expected = {r['path'] for r in manifest['files']} | {'deployment-manifest.json'}
+          actual = {p.relative_to(root).as_posix() for p in root.rglob('*') if p.is_file()}
+          assert actual == expected
+          assert manifest['slides'] == 11
+          for record in manifest['files']:
+              path = root / record['path']
+              assert path.resolve().is_relative_to(root.resolve()) and not path.is_symlink()
+              assert hashlib.sha256(path.read_bytes()).hexdigest() == record['sha256']
+          PY
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
