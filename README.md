@@ -12,4 +12,17 @@ site/에는 최종HTML·CSS·JavaScript,최적화 이미지3개,로컬 글꼴과
 
 ## 배포 방식
 
-main의site/ 또는Pages workflow를 수정해일반push하면GitHub Actions가 허용목록·해시를 검사하고site/만GitHub Pages에 배포합니다. 수동으로Actions의Deploy spring flowering presentation을 실행할 수도 있습니다. 최종확인 주소와로컬 재배포 안내는 배포 완료 후 이 문서와docs/STATUS.md에 기록합니다.
+main의site/ 또는Pages workflow를 수정해일반push하면GitHub Actions가 허용목록·해시를 검사하고site/만GitHub Pages에 배포합니다. 수동으로Actions의Deploy spring flowering presentation을 실행할 수도 있습니다. 공개 주소와 검증 결과는 아래 및 docs/STATUS.md에 기록합니다.
+
+
+## 공개 주소 및 검증
+
+발표: https://ysc111302-sudo.github.io/spring-flowering-analysis/
+
+저장소: https://github.com/ysc111302-sudo/spring-flowering-analysis
+
+배포 성공: https://github.com/ysc111302-sudo/spring-flowering-analysis/actions/runs/40193914787
+
+전체 11장을 Chrome 두 해상도에서 검증했습니다. 이미지·폰트·차트·이동·전체화면·애니메이션·해시 새로고침·출처 왕복을 확인했습니다. W07 외부 원문은 현재 404이며 출처 페이지에 표시했습니다. 실제 프로젝터와 Safari/Firefox는 미검증입니다.
+
+재배포: site/ 수정 시 deployment-manifest.json의 파일 해시·바이트 수도 갱신한 뒤 main에 일반 push합니다. Actions 성공 후 공개 주소를 확인합니다. 로컬 원본 프로젝트에서는 scripts/package_spring.py → scripts/prepare_spring_pages.py를 사용하고 격리된 배포 저장소에서 commit/push합니다.
